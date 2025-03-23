@@ -43,4 +43,5 @@ async function getPrayerTime() {
     `
 
 }
+getPrayerTime()
 city.onchange = getPrayerTime
