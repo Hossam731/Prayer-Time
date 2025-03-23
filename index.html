@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع مواعيد الصلاة</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- الهيدر -->
+        <header class="header">
+            <div class="header-content">
+                <h1>مواعيد الصلاة</h1>
+                <select id="city" class="city-selector">
+                    
+                </select>
+                <div class="date-info">
+                    <p id="city-name">مدينة القاهرة</p>
+                    <p id="current-date">السبت، 23 مارس 2025</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- مواعيد الصلاة -->
+        <section class="prayer-times">
+            <h2>مواعيد الصلاة لهذا اليوم</h2>
+            <table class="prayer-table">
+                <thead>
+                    <tr>
+                        <th>الصلاة</th>
+                        <th>الوقت</th>
+                    </tr>
+                </thead>
+                <tbody id="prayer-times">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <!-- التذييل -->
+        <footer class="footer">
+            <p>&copy; 2025 موقع مواعيد الصلاة. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
